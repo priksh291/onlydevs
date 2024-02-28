@@ -1,0 +1,143 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+@import url("https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Archivo+Black&family=Archivo:wght@300&display=swap");
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+
+  padding-top: 1rem;
+  overflow-y: auto;
+  color: white;
+  background-color: #070707;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.HomeContainer {
+  display: flex;
+  /* width: 50%; */
+  padding-left: 5px;
+  padding-right: 5px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.fade-in3{
+  animation: fadeIn ease-in 1;
+  animation-duration: 0.9s;
+  animation-fill-mode: forwards;
+}
+
+.get-started-button {
+  border: 2px solid rgb(194, 194, 194);
+  background: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(8.5px);
+  -webkit-backdrop-filter: blur(8.5px);
+  color: white;
+  border-radius: 2rem;
+  padding: 0.75rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  cursor: pointer;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.4);
+}
+
+.get-started-button:hover {
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+  box-shadow: 0 0 15px rgb(147, 196, 255);
+}
+
+.github-user {
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(8.5px);
+  -webkit-backdrop-filter: blur(8.5px);
+  border-radius: 0.75rem;
+  border: 1px solid rgb(189, 189, 189);
+  color: white;
+  padding: 1rem;
+  width: 100%;
+  max-height: fit-content;
+  margin-bottom: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  animation: fadeIn 0.5s ease-in-out forwards;
+  display: flex;
+  flex-direction: column;
+}
+
+.inputsearchbtn{
+    border: 1px solid lightgray;
+    color: black;
+    border-radius: 2rem;
+    /* height: 45px; */
+    padding: 5px;
+    width: 40%;
+    background-color: black;
+    color: white;
+    padding: 10px;
+}
+
+@media (max-width: 640px) {
+  .inputsearchbtn {
+    width: 100%; /* Width for mobile screens */
+  }
+}
+
+.typinganimation{
+  text-shadow: lightskyblue 0px 0px 5px, lightskyblue 0px 0px 10px;
+}
+
+
+.pagesbtn{
+  border: 1px solid lightgray;
+    color: black;
+    height: 45px;
+    padding: 5px;
+    width: max-content;
+    background-color: black;
+    color: white;
+}
+
+.swiperightanimation{
+  animation: myAnim 2s ease 0s 1 normal none;
+}
+
+.swipeleftanimation{
+  animation: myleft 2s ease 0s 1 normal none;
+}
+
+@keyframes myAnim {
+	0% {
+		opacity: 0;
+		transform: translateX(-250px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+
+
+
+@keyframes myleft {
+	0% {
+		opacity: 0;
+		transform: translateX(0);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateX(40px);
+	}
+}
