@@ -11,8 +11,8 @@ function GlobeComponent() {
     if (canvasRef.current) {
       globe = createGlobe(canvasRef.current, {
         devicePixelRatio: 1,
-        width: 700,
-        height: 700,
+        width: 650,
+        height: 650,
         phi: 1,
         theta: 0,
         dark: 1,
@@ -55,7 +55,7 @@ function GlobeComponent() {
       id="cobe"
       className={`z-0 ${isGlobeInitialized ? "fade" : ""}`}
       style={{
-        width: "700  px",
+        width: "700px",
         height: "700px",
         opacity: 0,
         backgroundColor: "transparent",
